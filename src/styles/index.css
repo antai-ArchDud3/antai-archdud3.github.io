@@ -1,0 +1,50 @@
+body {
+    --DISPLAY: 'DM Serif Display', serif;
+    --REGULAR: 'Hind Madurai', sans-serif;
+    --MONOSPACE: 'Source Code Pro', monospace;
+    --HEADING: 'Montserrat', sans-serif;
+    --DIVTEST: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    background-color: #212121;
+    color: #fff;
+    font-family: var(--REGULAR);
+    padding-top: 4vh;
+}
+
+nav {
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    transform: translateX(-1vw);
+    font-size: 3vh;
+}
+
+main {
+    padding-left: 5.5vw;
+}
+
+.display {
+    font-family: var(--DISPLAY);
+}
+
+.monospace {
+    font-family: var(--MONOSPACE);
+}
+
+.heading {
+    font-family: var(--HEADING);
+    font-weight: 900;
+}
+
+.nav-item {
+    flex-grow: 1;
+    border: 4vh solid #2f2f2f;
+    border-radius: 1vw;
+    background-color: #2f2f2f;
+}
+.nav-spacer {
+    border: 1vh;
+    background-color: transparent;
+}
