@@ -11,6 +11,13 @@
     <script src="https://kit.fontawesome.com/2172e4ad38.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <dialog id="petition">
+        <form method="dialog">
+            <p>Hi</p>
+            <button>close</button>
+        </form>
+        <button onclick="petition.close()">close</button>
+    </dialog>
     <nav>
         <div id="nav-item-1" class="nav-item">
             <i class="fa-solid fa-book-open"></i>
@@ -18,7 +25,7 @@
         <div class="nav-item nav-spacer">
             <br>
         </div>
-        <div id="nav-item-2" class="nav-item">
+        <div id="nav-item-2" class="nav-item" onclick="petition.showModal()">
             <i class="fa-solid fa-newspaper"></i>
         </div>
         <div class="nav-item nav-spacer">
@@ -28,121 +35,23 @@
             <i class="fa-solid fa-download"></i>
         </div>
     </nav>
+    <div id="collapsed-nav" onclick="collapsednavmenu.showModal()">
+        <i class="fa-solid fa-bars-staggered"></i>
+        <dialog id="collapsednavmenu">
+            <form>
+                <button>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+            </form>
+            <div id="collapsed-nav-item-1" class="collapsed-nav-item">
+                ello
+            </div>
+        </dialog>
+    </div>
     <main>
         <img src="src/images/ANTAI_DARK.png" width="70%" height="auto">
-        <p>
-            ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go looooooong
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go looooooong
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go looooooong
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go looooooong
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go looooooong
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go long
-            <br>ima makin this go looooooong
-            <br>
+        <p class="display">
+            AI is taking over. See <a href="#">why</a> it is and <a href="#">how</a> we can stop it.
         </p>
     </main>
 
