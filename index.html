@@ -13,10 +13,9 @@
 <body>
     <dialog id="petition">
         <form method="dialog">
-            <p>Hi</p>
-            <button>close</button>
+            <p>Unfortunately this is not available at this moment.</p>
+            <button>Go back</button>
         </form>
-        <button onclick="petition.close()">close</button>
     </dialog>
     <nav>
         <div id="nav-item-1" class="nav-item">
@@ -49,11 +48,34 @@
         </dialog>
     </div>
     <main>
-        <img src="src/images/ANTAI_DARK.png" width="70%" height="auto">
+        <img src="src/images/ANTAI_DARK.png" id="ANTAI-HEADING-IMAGE">
         <p class="display">
-            AI is taking over. See <a href="#">why</a> it is and <a href="#">how</a> we can stop it.
+            AI is taking over. See <a href="#why">why</a> it is and <a href="#how">how</a> we can stop it.
         </p>
+        <p id="why">
+            AI (Or artificial intelligence) is basically a robot that knows almost anything - Even 
+            illegal things, with a bit of jiggery-pokery. It can tell you anything, can create anything, 
+            and can do it even better than a human. Now, this isn't something to hide in your house about… 
+            at least not yet. As of mid-2023, AI LLMs (Large Language Models like ChatGPT) and Robots 
+            have not been fused together. But as time goes on, it is almost guaranteed that it will 
+            happen, creating dark realities currently only in books like Snow Crash by Neal Stephenson. 
+            There are three ways this can go: The dark way, The copilot way, and the anti-ai way. 
+            The dark way is that it takes over, and we have to fight for our lives. The copilot way, is 
+            that the AI is a copilot for people's jobs, not taking over. The Anti-AI way is that AI is 
+            illegal, and eventually becomes an urban tale.
+        </p>
+        <p id="how">
+            But how do we stop the dark way from happening? Well, there are a few ways. Way 1: People 
+            sue ChatGPT and all of the other models, and also sue their creators for fueling a generation
+            of cheating in essays and assessments, and having jobs being replaced by AI. Way 2: We sign a 
+            <a onclick="petition.showModal()">petiton</a> to stop AI. Way 3: Well, we just stop using it
+            making sure there is no reason for AI. Now don't get me wrong, it's good for some things. But
+            for other things, like cheating and replacing jobs - That's where it crosses the line. Join now,
+            before it's too late.
+        </p>
+        <footer>
+            <p>©2023 AntAI ©2023 ArchDud3 - Thanks to the infinite knowledge on the internet on this subject</p>
+        </footer>
     </main>
-
 </body>
 </html>

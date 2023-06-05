@@ -10,6 +10,7 @@ body {
     color: #fff;
     font-family: var(--REGULAR);
     padding-top: 1vw;
+    font-size: 20px;
 }
 @media screen and (min-width: 800px) {
     nav {
@@ -25,6 +26,7 @@ body {
     }
 }
 @media screen and (max-width: 800px) {
+    
     nav {
         display: none;
     }
@@ -104,7 +106,39 @@ a:hover {
     color: #fff;
     font-family: var(--REGULAR);
     border: 0px;
+    height: 100%;
+    width: 100%;
 }
 #petition::backdrop {
     background-color: rgba(47, 47, 47, 0.647);
+}
+@media screen and (min-width: 2240px) {
+    body {font-size: 1vw;}
+}
+@media screen and (max-width: 1080px) {
+    .display {font-size: 35px;}
+    #ANTAI-HEADING-IMAGE {
+        width: 90vw; 
+        height: auto;
+    }
+}
+@media screen and (min-width: 1080px) {
+    #ANTAI-HEADING-IMAGE {
+        width: 70%;
+        height: auto;
+    }
+}
+button {
+    color: #fff;
+    background-color: #2f2f2f;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+footer {
+    height: 10px;
+    width: 100%;
+    bottom: 0;
+    font-size: 9px;
+    color: #cecece;
+    text-align: center;
 }
