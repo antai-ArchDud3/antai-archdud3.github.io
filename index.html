@@ -18,9 +18,11 @@
         </form>
     </dialog>
     <nav>
-        <div id="nav-item-1" class="nav-item">
-            <i class="fa-solid fa-book-open"></i>
-        </div>
+        <a href="about.html">
+            <div id="nav-item-1" class="nav-item">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+        </a>
         <div class="nav-item nav-spacer">
             <br>
         </div>
@@ -30,21 +32,33 @@
         <div class="nav-item nav-spacer">
             <br>
         </div>
-        <div id="nav-item-3" class="nav-item">
-            <i class="fa-solid fa-download"></i>
-        </div>
+        <a href="about.html">
+            <div id="nav-item-3" class="nav-item">
+                <i class="fa-solid fa-download"></i>
+            </div>
+        </a>
     </nav>
     <div id="collapsed-nav" onclick="collapsednavmenu.showModal()">
         <i class="fa-solid fa-bars-staggered"></i>
         <dialog id="collapsednavmenu">
             <form>
-                <button>
+                <button onclick="collapsednavmenu.petition()">
                     <i class="fa-solid fa-circle-xmark"></i>
                 </button>
             </form>
-            <div id="collapsed-nav-item-1" class="collapsed-nav-item">
-                ello
+            <a href="about.html">
+                <div id="collapsed-nav-item-1" class="collapsed-nav-item">
+                    <i class="fa-solid fa-book-open"></i> Read more
+                </div>
+            </a>
+            <div id="collapsed-nav-item-2" class="collapsed-nav-item" onclick="petition.showModal()">
+                <i class="fa-solid fa-newspaper"></i> Sign the petition
             </div>
+            <a href="about.html">
+                <div id="collapsed-nav-item-3" class="collapsed-nav-item">
+                    <i class="fa-solid fa-download"></i> Read about the blocker
+                </div>
+            </a>
         </dialog>
     </div>
     <main>

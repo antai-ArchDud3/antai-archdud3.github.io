@@ -85,6 +85,7 @@ main {
     border-right: 1vw solid #2f2f2f;
     border-radius: 1vw;
     background-color: #2f2f2f;
+    color: #fff;
 }
 .nav-spacer {
     border: 1vw;
@@ -141,4 +142,11 @@ footer {
     font-size: 9px;
     color: #cecece;
     text-align: center;
+}
+.collapsed-nav-item {
+    width: 100%;
+    color: #fff;
+    background-color: #212121;
+    border-bottom: 1px solid #fff;
+    height: 30px;
 }
