@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: color-mix(in srgb, field 30%, AccentColor) !important;
+            transition: all 0.4s ease-out;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+        div {
+            border: 1px solid #fff;
+        }
+        body:-moz-window-inactive {
+            background: color-mix( in srgb, #000000, color-mix(in srgb, field 70%, AccentColor)) !important;
+            transition: all 0.4s ease-out;
+        }
+        #sb {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 30px;
+            width: 580px;
+            border-radius: 50px;
+            border: 0;
+            outline: 0;
+            background: color-mix(in srgb, field 40%, AccentColor) !important;
+            transition: all 0.4s ease-out;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+        }
+        #sb:-moz-window-inactive {
+            background: color-mix( in srgb, #000000, color-mix(in srgb, field 80%, AccentColor)) !important;
+            transition: all 0.4s ease-out;
+            color: color-mix( in srgb, #000000, color-mix(in srgb, field 100%, AccentColor)) !important;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="sb" placeholder="Search...">
+
+    <script>
+        sb = document.querySelector("#sb");
+        const interval = setInterval(function() {
+            sbv = document.querySelector("#sb").value;
+        }, 10);
+
+        sb.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                window.location.href = "https://www.google.com/search?client=firefox-b-d&q=" + sbv;
+            }
+        });
+    </script>
+</body>
+</html>
